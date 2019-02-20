@@ -33,3 +33,6 @@ function testMethodCreatingAndStoringNote(){
   assert.isTrue(list.array = [note]);
 };
 testMethodCreatingAndStoringNote();
+
+
+// "<ul>" + `<li><div>${array[i]}</div></li><li>` + "</ul>"
