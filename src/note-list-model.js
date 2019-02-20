@@ -12,7 +12,9 @@
     }
   };
 
-
+  NoteList.prototype.create_note = function(note){
+    this.array.push(note);
+  };
 
 
 })(this);
