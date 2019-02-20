@@ -4,6 +4,7 @@ function testNoteListToReturnArray(){
 };
 testNoteListToReturnArray();
 
+// Refactored test:
 // function testMethodReturningArrayElements(){
 //
 //   var note = new NoteList();
@@ -23,3 +24,12 @@ function testMethodReturningArrayElements(){
   assert.isTrue(note.return_array_items() == 2);
 };
 testMethodReturningArrayElements();
+
+function testMethodCreatingAndStoringNote(){
+  var note = new Note('string');
+  var list = new NoteList();
+  list.array = [];
+  list.create_note(note);
+  assert.isTrue(list.array = [note]);
+};
+testMethodCreatingAndStoringNote();
