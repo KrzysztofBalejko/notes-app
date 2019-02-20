@@ -1,8 +1,8 @@
 
 (function(exports) {
 
-  function Note() {
-    this.text = 'My favourite language is JavaScript';
+  function Note(string = 'My favourite language is JavaScript') {
+    this.text = string;
   };
 
   exports.Note = Note;
