@@ -23,23 +23,15 @@ function TestHTMLlist(){
 
   controller.create_html = function(){
    var doc = document.createElement('section')
-   console.log(doc);
    doc.innerHTML = "<div id='app'>hello</div>"
-   // console.log(doc.innerHTML);
    return doc
   }
 
-  console.log(note);
-  console.log(notelist);
-  console.log(controller);
-  console.log(view);
+  assert.isTrue(controller.insert_html(view, notelist) === "<ul><li><div>Favourite drink: seltzer</div></li></ul>")
 
+}
 
-  // assert.isTrue(controller.insert_html(view, notelist) === "<ul><div><li>Favourite drink: seltzer</li></div></ul>")
-
- }
-
- TestHTMLlist();
+TestHTMLlist();
 
 //
 //
