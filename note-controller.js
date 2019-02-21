@@ -2,7 +2,7 @@
 
 function NoteController(notelist = new NoteList(), note){
   this.notelist = notelist.create_note(note)
-  this.view = new NoteListView(notelist)
+  // this.view = new NoteListView(notelist)
 };
 
 NoteController.prototype.insert_html = function(view, notelist){
