@@ -2,14 +2,15 @@
 
 function NoteController(notelist = new NoteList(), note){
   this.notelist = notelist.create_note(note)
-  // this.view = new NoteListView(notelist)
 };
 
 NoteController.prototype.insert_html = function(view, notelist){
+  return this.create_html.innerHTML = view.html_string(notelist);
+};
 
+NoteController.prototype.create_html = function(){
   var id = document.getElementById('app');
-  id.innerHTML = view.html_string(notelist);
-
+  return id;
 };
 
 
