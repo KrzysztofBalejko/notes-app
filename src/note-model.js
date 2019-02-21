@@ -5,11 +5,10 @@
     this.text = string;
   };
 
-  exports.Note = Note;
-
   Note.prototype.note_text = function(){
     return this.text;
   };
 
+  exports.Note = Note;
 
 })(this);
