@@ -14,7 +14,7 @@ function testMethodReturningHTML(){
   notelist.create_note(note2);
 
   var view = new NoteListView(notelist);
-  assert.isTrue(view.html_string(notelist) === "<ul><li><div>Favourite food: pesto</div></li><li><div>Favourite drink: seltzer</div></li></ul>");
+  assert.isTrue(view.html_string(notelist) === ("<ul><li><div>" + "Favourite food: pest" + "</div></li>" + "<li><div>" + "Favourite drink: sel" + "</div></li></ul>"));
 };
 testMethodReturningHTML();
 
