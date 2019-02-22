@@ -9,7 +9,7 @@ function testNoteControllerFunctionality(){
   var note = new Note('Favourite drink: seltzer');
   var controller = new NoteController(notelist, note);
   var view = new NoteListView(notelist);
-  assert.isTrue(view.html_string(notelist) == "<ul><li><div>" + "Favourite drink: seltzer" + "</div></li></ul>" );
+  assert.isTrue(view.html_string(notelist) === ("<ul><li><div>" + "Favourite drink: sel" + "</div></li></ul>"));
 };
 testNoteControllerFunctionality();
 
@@ -27,7 +27,7 @@ function TestHTMLlist(){
    return doc
   }
 
-  assert.isTrue(controller.insert_html(view, notelist) === "<ul><li><div>Favourite drink: seltzer</div></li></ul>")
+  assert.isTrue(controller.insert_html(view, notelist) === ("<ul><li><div>" + "Favourite drink: sel" + "</div></li></ul>"));
 
 }
 
